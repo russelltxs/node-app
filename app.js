@@ -5,7 +5,7 @@ let memC = new memcached('localhost:11211');
 const app = express();
 
 app.get('/', (req,res) => {
-  res.send('here we are');
+  res.send('May and Russ are here.  Good stuff!!!!    goto /memc');
 });
 
 app.get('/memc/set/:key/:value', (req, res) => { // memC.set(key, value, 600);
